@@ -34,7 +34,7 @@ class ShippingDatesAdvanced implements ShippingDatesInterface
             if (self::isValidDate($deliveryDate)) {
                 $businessDays++;
             }
-            
+
         }
 
         return $deliveryDate;
@@ -46,7 +46,7 @@ class ShippingDatesAdvanced implements ShippingDatesInterface
      * @param \DateTime $orderDate
      * @return \DateTime
      */
-    private function calculateDispatchDate(\DateTime $orderDate) : \DateTime
+    private function calculateDispatchDate(\DateTime $orderDate)
     {
         $date = clone $orderDate;
 

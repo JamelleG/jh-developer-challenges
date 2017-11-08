@@ -44,7 +44,7 @@ class ShippingDates implements ShippingDatesInterface
      * @param \DateTime $orderDate
      * @return \DateTime
      */
-    private function calculateDispatchDate(\DateTime $orderDate) : \DateTime
+    private function calculateDispatchDate(\DateTime $orderDate)
     {
         $date = clone $orderDate;
        
